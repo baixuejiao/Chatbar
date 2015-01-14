@@ -1,0 +1,49 @@
+@import "site.less";
+
+.wrapper{
+	width:100%;
+	position:absolute; 
+	z-index:1;
+	top:44px; 
+	bottom:0px; 
+	overflow:auto;
+}
+
+.set-nav{
+	padding: 0.9375rem 0.625rem;
+	// padding: 0 ;
+	background: #fff;
+	.clearfix();
+}
+
+.set-img{
+	float: left;
+	width: 3.125rem;
+	height: 3.125rem;
+	.border-radius(25px);
+
+	img{
+		width: 3.125rem;
+		height: 3.125rem;
+		.border-radius(25px);
+	}
+}
+
+.set-name{
+	float: left;
+	height: 3.125rem;
+	margin-left: 0.625rem;
+	font-size: 0.9375rem;
+	line-height: 3.125rem;
+	color: #333;
+}
+
+.set-personal{
+	float: right;
+	width: 1.875rem;
+	height: 1.875rem;
+	margin-top: 0.625rem;
+	background: url("@{imgPath}/goto.png") no-repeat 0 0;
+	background-size: contain;
+}
+

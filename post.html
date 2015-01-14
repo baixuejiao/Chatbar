@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<link rel="stylesheet" href="assets/css/post.css">
+</head>
+<body>
+	<header class="header">
+		<h1>
+			<a href="javascript:history.back(-1)" class="back"></a>
+			发表主题
+			<a href="javascript:void(0)" class="send">发帖</a>
+		</h1>
+	</header>
+
+	<div class="wrapper">
+		<div class="title">
+			<input type="text" placeholder="标题">
+		</div>
+
+		<div class="post-content">
+			<textarea name="" id="" cols="30" rows=""></textarea>
+		</div>
+	
+		<div class="photo">
+			<a href="javascript:void(0)"  class="photo-btn"></a>
+			<a href="javascript:void(0)"  class="photo-btn-press"></a>
+		</div>
+		<div class="photo-content">
+			<form enctype="multipart/form-data" action="" method="post" class="photo-form"> 
+				<div class="photo-stage"></div>
+				<a href="javascript:void(0)" class="add-photo"><input type="file" name="imageUpload" class="add-input"/></a>
+			</form>
+		</div>
+	</div>
+	<script src="assets/js/zepto.min.js"></script>
+	<script>
+		$(function(){
+			$(".photo-btn").tap(function(){
+				$(this).hide();
+				$('.photo-btn-press').show();
+				$(".photo-content").css("display","inline-block");
+			})
+
+			$(".add-input").change(function(e){  
+				for(var i=0;i<e.target.files.length;i++){
+					var file = e.target.files.item(i);
+                    
+					if(!(/^image\/.*$/i.test(file.type))){
+						continue;
+					}
+
+					var freader = new FileReader();
+					freader.readAsDataURL(file);
+					freader.onload=function(e){
+						var img = '<div class="img-content"><img class="list-img" src="'+e.target.result+'"/><a href="javascript:void(0)" class="img-del"></a></div>';
+						$(".photo-stage").append(img);
+					}
+				}
+			});
+
+			$(".photo-stage").delegate(".img-del",'tap',function(){
+
+			});
+		})
+	</script>
+</body>
+</html>

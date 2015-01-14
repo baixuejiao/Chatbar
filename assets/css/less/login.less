@@ -1,0 +1,66 @@
+@import "site.less";
+
+.wrapper{
+	width:100%;
+	position:absolute; 
+	z-index:1;
+	top:44px; 
+	bottom:0px; 
+	overflow:auto;
+}
+
+.login-form{
+	margin-top: 0.9375rem;
+	padding:  0 0.625rem;
+}
+
+.login-input{
+	height: 4.6875rem;
+	background: url("@{imgPath}/details.jpg") no-repeat 0 0;
+	background-size: contain;
+	background-position: 0 bottom; 
+}
+
+.login-username,.login-psw{
+	width: 100%;
+	padding: 0.625rem 0;
+	font-size: 0.8125rem;
+	text-indent: 0.625rem;
+	line-height: normal;
+	outline: none;
+	color: #777;
+}
+
+.login-username{
+	border: 1px solid #ebebeb;
+	border-radius: 5px 5px 0 0;
+}
+
+.login-psw{
+	border-left: 1px solid #ebebeb;
+	border-right: 1px solid #ebebeb;
+	border-top: 0;
+	border-bottom: 0;
+}
+
+.login-btn-wrapper{
+	margin: 0.9375rem 0;
+	padding: 0 0.9375rem;
+}
+
+.login-btn{
+	width: 100%;
+	padding: 0.625rem 0;
+	font-size: 1.25rem;
+	text-align: center;
+	color: #fff;
+	background: #5FD77D;
+	border: 1px solid #5FD77D;
+	.border-radius();
+}
+
+.login-forget{
+	float: right;
+	font-size: 0.8125rem;
+	color: #5b98d5;
+}

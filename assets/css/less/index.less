@@ -1,0 +1,185 @@
+@import "site.less";
+
+.nav{
+	display: inline-block;
+	width: 100%;
+	padding: 0.625rem;
+	background: #fff;
+}
+
+.nav-img{
+	float: left;
+	width: 3.125rem;
+	height: 3.125rem;
+	margin-right: 1.25rem;
+	
+	img{
+		width: 3.75rem;
+		height: 3.75rem;
+	}
+}
+
+.nav-infor{
+	float: left;
+}
+
+.nav-title{
+	font-size: 1.25rem;
+	color: #22242c;
+}
+
+.nav-follow,.nav-posts{
+	float: left;
+	margin-top: 0.9375rem;
+	font-size: 0.75rem;
+	color: #aeaeae;
+
+	span{
+		float: left;
+	}
+}
+
+.nav-num{
+	float: left;
+	margin-right: 1.25rem;
+	color: #d33131;
+}
+
+.section{
+	margin: 0.9375rem 0.625rem 0 0.625rem;
+	background: #fff url("@{imgPath}/details.jpg") no-repeat 0 0;
+	background-size: contain;
+	background-position: 0 bottom; 
+}
+
+.section-title{
+	height: 2.1875rem;
+	padding: 0.625rem;
+	border-bottom: 1px solid #ebebeb;
+}
+
+.section-pic{
+	float: left;
+	width: 2.1875rem;
+	height: 2.1875rem;
+	margin-right: 0.625rem;
+	.border-radius(25px);
+
+	img{
+		width: 2.1875rem;
+		height: 2.1875rem;
+		.border-radius(25px);
+	}
+}
+
+.section-infor{
+	float: left;
+	line-height: 1;
+}
+
+.section-infor-name{
+	display: inline-block;
+	width: 100%;
+	font-size: 0.8125rem;
+	color: #777;
+}
+
+.section-infor-time{
+	display: inline-block;
+	width: 100%;
+	margin-top: 0.3125rem;
+	font-size: 0.75rem;
+	color: #aeaeae;
+}
+
+.section-content{
+	padding: 0.625rem;
+	border-bottom: 1px solid #ebebeb;
+}
+
+.section-content-title{
+	font-size: 0.9375rem;
+	color: #333;
+}
+
+.section-content-text{
+	font-size: 0.8125rem;
+	color: #777;
+}
+
+.section-content-pic{
+	display: block;
+	display: inline-block;
+	margin-top: 0.625rem;
+	
+	img{
+		float: left;
+		// display: inline-block;
+		width: 5.625rem;
+		height: 4.0625rem;
+		margin-right: 0.3125rem;
+	}
+	
+	img:last-child{
+		margin-right: 0;
+	}
+}
+
+.section-footer{
+	height: 2.125rem;
+	padding-right: 0.325rem;
+}
+
+.section-review,.section-favour{
+	float: right;
+
+	a{
+		float: left;
+		width: 1.875em;
+		height: 1.875rem;
+	}
+
+	span{
+		float: left;
+		height: 1.875rem;
+		line-height: 1.875rem;
+		font-size: 0.75rem;
+		color: #777;
+	}
+}
+
+.section-favour{
+	margin-right: 1.25rem;
+	position: relative;
+}
+
+.section-review-icon{
+	background: url("@{imgPath}/review.png") no-repeat 0 0;
+}
+
+.section-favour-icon{
+	background: url("@{imgPath}/favour.png") no-repeat 0 0;
+}
+
+.section-favour-icon-zan{
+	display: none;
+	background: url("@{imgPath}/favour_choose.png") no-repeat 0 -26px;
+}
+
+.section-review-icon,.section-favour-icon,.section-favour-icon-zan{
+	background-size: contain;
+	background-position: center;
+}
+
+.favour-list{
+	position: relative;
+}
+
+.favour-img{
+	display: none;
+	position: absolute;
+	top: -1.1rem;
+	left: -2.2rem;
+}
+
+

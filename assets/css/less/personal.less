@@ -1,0 +1,172 @@
+@import "site.less";
+
+.nav{
+	width: 100%;
+	height: 12.5rem;
+	background: url("@{imgPath}/personbg.png") no-repeat 0 0;
+	background-size: contain;
+	background-position: center;
+}
+
+.nav-img{
+	width: 6.25rem;
+	height: 6.25rem;
+	margin: auto;
+	padding-top: 1.5625rem;
+
+	img{
+		width: 6.25rem;
+		height: 6.25rem;
+		border: 1px solid #22242c;
+		border-radius: 3.125rem;
+	}
+}
+
+.nav-infor{
+	margin-top: 0.3125rem;
+}
+
+.nav-name,.nav-age{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	font-size: 0.9375rem;
+	color: #fff;
+}
+
+.nav-name{
+	margin: 0.625rem 0;
+}
+
+.nav-age{
+	height: 0.9375rem;
+	background: url("@{imgPath}/female.png") no-repeat 0 0;
+	background-position: 58% 0;
+	background-size: contain;
+}
+
+.talk{
+	width: 100%;
+	height: 2rem;
+	margin-top: 0.9375rem;
+	text-align: center;
+}
+
+.talk-btn{
+	display: inline-block;
+	margin: 0 3.125rem;
+	width: 12.5rem;
+	height: 1.875rem;
+	font-size: 0.9375rem;
+	text-align: center;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	background: #fff;
+	color: #5b98d5;
+
+}
+
+.talk-pic{
+	display: inline-block;
+	width: 4.375rem;
+	height: 1.875rem;
+	padding-left: 1.875rem;
+	line-height: 1.875rem;
+	background: url("@{imgPath}/talk.png") no-repeat 0 0;
+	background-size: contain;
+}
+
+.section{
+	margin: 0.9375rem 0.625rem 0 0.625rem;
+	background: #fff;
+	background:#fff url("@{imgPath}/details.jpg") no-repeat 0 0;
+	background-size: contain;
+	background-position-y: bottom; 
+}
+.section-content{
+	padding: 0.625rem;
+	border-bottom: 1px solid #ebebeb;
+}
+
+.section-content-title{
+	font-size: 0.9375rem;
+	color: #333;
+}
+
+.section-content-text{
+	font-size: 0.8125rem;
+	color: #777;
+}
+
+.section-content-pic{
+	margin-top: 0.625rem;
+	clear: both;
+	
+	img{
+		width: 5.625rem;
+		height: 4.0625rem;
+		margin-right: 0.5rem;
+		background: blue;
+	}
+	
+	img:last-child{
+		margin-right: 0;
+	}
+}
+
+.section-footer{
+	height: 2.125rem;
+	padding-right: 0.325rem;
+	padding-left: 0.625rem;
+}
+
+.section-classify,.section-time{
+	float: left;
+	height: 1.875rem;
+	line-height: 1.875rem;
+	margin-right: 0.3125rem;
+	font-size: 0.75rem;
+	color: #aeaeae;
+}
+
+.section-review,.section-favour{
+	float: right;
+
+	a{
+		float: left;
+		width: 1.875em;
+		height: 1.875rem;
+	}
+
+	span{
+		float: left;
+		height: 1.875rem;
+		line-height: 1.875rem;
+		font-size: 0.75rem;
+		color: #777;
+	}
+}
+
+.section-favour{
+	margin-right: 1.25rem;
+	position: relative;
+}
+
+.section-review-icon{
+	background: url("@{imgPath}/review.png") no-repeat 0 0;
+	background-size: contain;
+	background-position: center;
+}
+
+.section-favour-icon{
+	background: url("@{imgPath}/favour.png") no-repeat 0 0;
+	background-size: contain;
+	background-position: center;
+}
+
+.section-favour-icon-zan{
+	display: none;
+	background: url("@{imgPath}/favour_choose.png") no-repeat 0 -26px;
+	background-size: contain;
+	background-position: center;
+}

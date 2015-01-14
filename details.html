@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width,target-densitydpi=1,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<link rel="stylesheet" href="assets/css/details.css">
+</head>
+<body>
+	<div class="cover">
+		<img src="" alt="">
+	</div>
+
+	<header class="header">
+		<h1>
+			<a href="javascript:history.back(-1)" class="back"></a>
+			帖子详情
+			<a href="javascript:void(0)" class="spread"></a>
+		</h1>
+	</header>
+
+	<div class="spread-content">
+		<section class="collect">
+			<a href="" class="spread-pic collect-pic"></a>
+			<span>收藏</span>
+		</section>
+		<section class="share">
+			<a href="" class="spread-pic share-pic"></a>
+			<span>分享</span>
+		</section>
+		<section class="report">
+			<a href="" class="spread-pic report-pic"></a>
+			<span>举报</span>
+		</section>
+	</div>	
+
+	<div class="wrapper">
+	
+		<section class="infor">
+			<div class="infor-pic">
+				<img src="" alt="">
+			</div>
+			<ul class="infor-content">
+				<li class="infor-name">phtkg</li>
+				<li class="infor-time">2014-11-04 15:31:37</li>
+			</ul>
+		</section>
+
+		<section class="content">
+			<h4 class="content-title">(Equal)-FASTEST-TEST-CENTURY-EVER!</h4>
+			<div class="content-article">Congratulations to Pakistan Cricket Team skipper Misbah-ui-Haq on his new record:</div>
+			<div class="content-pic">
+				<img src="assets/img/pic.jpg" alt="">
+				<img src="assets/img/pic.jpg" alt="">
+			</div>
+		</section>
+
+		<section class="favour">		
+		</section>
+
+		<section class="review">
+			<ul>
+				<li class="review-list">
+					<div class="review-infor">
+						<img src="assets/img/pic.jpg" alt="" class="review-pic">
+						<span class="review-name">james</span>
+					</div>
+					<div class="review-message">
+						<span class="review-num">2楼</span>
+						<span class="review-time">2014-11-05 10:12:05</span>
+					</div>
+					<div class="review-content">where are you?</div>
+				</li>
+				<li class="review-list">
+					<div class="review-infor">
+						<img src="assets/img/pic.jpg" alt="" class="review-pic">
+						<span class="review-name">james</span>
+					</div>
+					<div class="review-message">
+						<span class="review-num">2楼</span>
+						<span class="review-time">2014-11-05 10:12:05</span>
+					</div>
+					<div class="review-content">where are you?</div>
+				</li>
+				<li class="review-list">
+					<div class="review-infor">
+						<img src="assets/img/pic.jpg" alt="" class="review-pic">
+						<span class="review-name">james</span>
+					</div>
+					<div class="review-message">
+						<span class="review-num">2楼</span>
+						<span class="review-time">2014-11-05 10:12:05</span>
+					</div>
+					<div class="review-content">where are you?</div>
+				</li>
+			</ul>
+		</section>
+
+	</div>
+	<div class="review-container">
+		<input type="text" placeholder="请输入您的评论">
+		<a class="review-send"></a>
+	</div>
+	<footer class="footer">
+		<div class="footer-favour">
+			<a href="javascript:void(0)" class="footer-favour-icon"></a>
+			<a href="javascript:void(0)" class="footer-favour-icon-zan"></a>
+			<span class="footer-favour-num">0</span>
+		</div>
+		<div class="footer-review">
+			<a href="javascript:void(0)" class="footer-review-icon"></a>
+			<span class="footer-review-num">0</span>
+		</div>
+	</footer>
+
+	
+	<script src="assets/js/jquery-1.9.1.min.js"></script>
+	<!-- <script src="assets/js/iscroll.js"></script> -->
+	<!-- <script src="assets/js/index.js"></script> -->
+
+	<script>
+		$(".content-pic img").on('click',function(){
+			var src = $(this).attr("src");
+
+			$(".cover").find("img").attr("src",src);
+			$(".cover").show(400);
+			$(".cover img").css("margin-top",100);
+		})
+
+		$(".cover").click(function(){
+			$(this).hide(400);
+		})
+
+		$(".spread").on("click",function(){
+			$(".spread-content").toggle(400);
+		})
+
+		$(".footer-review").on('click',function(){
+			$(".review-container").show();
+		})
+
+		$(".review-send").on('click',function(){
+			$(".review-container").hide();
+		})
+
+		$(".footer-favour").on("click",function(){
+			$(this).find(".footer-favour-icon").toggle();
+			$(this).find(".footer-favour-icon-zan").toggle();
+		})
+	</script>
+	
+</body>
+</html>
